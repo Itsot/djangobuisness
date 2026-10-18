@@ -1,0 +1,635 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Omkar Taru | Software Developer Portfolio</title>
+    <meta name="title" content="Omkar Taru | Software Developer Portfolio">
+    <meta name="description" content="Explore Omkar Taru's software development portfolio, including Android applications, Django web development, backend APIs, and technology projects.">
+    <meta name="keywords" content="Omkar Taru, Software Developer, Android Developer, Django Developer, Python, Kotlin, Java, REST APIs, Portfolio">
+    <meta name="author" content="Omkar Taru">
+    <meta name="theme-color" content="#0a0e17">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://django-easy.onrender.com/">
+    <meta property="og:title" content="Omkar Taru | Software Developer Portfolio">
+    <meta property="og:description" content="Explore Omkar Taru's software development portfolio, including Android applications, Django web development, backend APIs, and technology projects.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Background Ambient Glow Effects -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <header class="header" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo" aria-label="Omkar Taru Home">
+                <span class="logo-symbol">&lt;/&gt;</span>
+                <span class="logo-text">Omkar<span class="highlight">Taru</span></span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline-nav">Let's Talk</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary mobile-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Opportunities & Projects</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Omkar Taru.</span>
+                    </h1>
+
+                    <h2 class="hero-headline">
+                        Software Developer <span class="headline-sep">|</span> <span class="accent-text">Android & Django Developer</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I build practical software solutions, mobile applications, backend APIs, and technology-driven products.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore My Work</span>
+                            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="meta-number">Android</span>
+                            <span class="meta-label">Native & Kotlin</span>
+                        </div>
+                        <div class="meta-divider"></div>
+                        <div class="meta-item">
+                            <span class="meta-number">Django</span>
+                            <span class="meta-label">APIs & Backend</span>
+                        </div>
+                        <div class="meta-divider"></div>
+                        <div class="meta-item">
+                            <span class="meta-number">Systems</span>
+                            <span class="meta-label">Device & Data Flow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Tech Visual -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="window-tabs">
+                                <span class="tab active">developer.py</span>
+                                <span class="tab">MainActivity.kt</span>
+                            </div>
+                        </div>
+                        <div class="code-card-body">
+                            <pre class="code-editor"><code><span class="c-keyword">class</span> <span class="c-class">DeveloperProfile</span>:
+    <span class="c-keyword">def</span> <span class="c-func">__init__</span>(<span class="c-param">self</span>):
+        <span class="c-param">self</span>.name = <span class="c-str">"Omkar Taru"</span>
+        <span class="c-param">self</span>.role = <span class="c-str">"Software Developer"</span>
+        <span class="c-param">self</span>.core = [
+            <span class="c-str">"Android"</span>,
+            <span class="c-str">"Django"</span>,
+            <span class="c-str">"REST APIs"</span>
+        ]
+
+    <span class="c-keyword">def</span> <span class="c-func">mission</span>(<span class="c-param">self</span>):
+        <span class="c-keyword">return</span> <span class="c-str">"Building practical solutions"</span></code></pre>
+                        </div>
+                        <div class="code-card-footer">
+                            <span class="status-indicator"></span>
+                            <span class="status-text">Production Ready • Django 5.2</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Tech Badges -->
+                    <div class="floating-badge badge-top-right">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                        <span>Android &amp; Kotlin</span>
+                    </div>
+
+                    <div class="floating-badge badge-bottom-left">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>Django REST API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Bridging Native Mobile &amp; Robust Backend</h2>
+                    <p class="section-subtitle">
+                        Building functional, maintainable, and high-performance digital solutions.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card intro-card">
+                        <div class="card-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-icon">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Professional Background</h3>
+                        <p class="card-text">
+                            I am a software developer dedicated to designing practical technology solutions. My primary focus spans native Android development and Python Django backend systems.
+                        </p>
+                        <p class="card-text">
+                            With hands-on experience in Android, Kotlin, Java, Python, Django, REST APIs, and database integration, I specialize in architecting reliable end-to-end data flows and seamless application experiences.
+                        </p>
+                    </div>
+
+                    <div class="about-card focus-card">
+                        <div class="card-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-icon">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Core Development Philosophy</h3>
+                        <ul class="focus-list">
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Practical Problem Solving:</strong> Creating direct, clean software implementations tailored to actual operational requirements.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>API-Driven Architecture:</strong> Designing well-structured REST endpoints that communicate securely with client devices.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Device &amp; Protocol Integration:</strong> Enabling smooth communication between mobile devices, backend APIs, and hardware peripherals.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Skills</span>
+                    <h2 class="section-title">Technologies &amp; Tools</h2>
+                    <p class="section-subtitle">
+                        Key languages, frameworks, and developer platforms I leverage.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Mobile Development -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box icon-mobile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Mobile Development</h3>
+                        </div>
+                        <p class="category-desc">
+                            Crafting performant native Android applications with intuitive layouts and hardware integration.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Android
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Kotlin
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Java
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box icon-backend">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Backend Development</h3>
+                        </div>
+                        <p class="category-desc">
+                            Building reliable server-side systems, RESTful API architecture, and database integrations.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Python
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Django
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Django REST Framework
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> REST APIs
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Tools and Platforms -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box icon-tools">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Tools &amp; Platforms</h3>
+                        </div>
+                        <p class="category-desc">
+                            Version control, testing suites, API verification, and professional IDE environments.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Git
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> GitHub
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Android Studio
+                            </span>
+                            <span class="skill-pill">
+                                <span class="pill-dot"></span> Postman
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Projects</span>
+                    <h2 class="section-title">Solutions &amp; Implementations</h2>
+                    <p class="section-subtitle">
+                        Key domains covering mobile applications, web services, and hardware communication.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Android Applications -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-badge">Mobile Engineering</span>
+                            <div class="project-actions">
+                                <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">Android Applications</h3>
+
+                        <p class="project-desc">
+                            Mobile application development focused on practical business requirements and device integration.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <span>View GitHub Repository</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Django Web Applications -->
+                    <div class="project-card highlight-card">
+                        <div class="project-header">
+                            <span class="project-badge">Web &amp; Backend</span>
+                            <div class="project-actions">
+                                <a href="{{ project_github_url }}" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">Django Web Applications</h3>
+
+                        <p class="project-desc">
+                            Web applications and backend APIs developed using Python and Django.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Django REST Framework</span>
+                            <span class="tag">WhiteNoise</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="{{ project_github_url }}" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <span>Source on GitHub</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Hardware Communication Applications -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-badge">Device &amp; Sensor</span>
+                            <div class="project-actions">
+                                <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">Hardware Communication Applications</h3>
+
+                        <p class="project-desc">
+                            Applications involving device communication, sensor integration, and data processing.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Device Protocols</span>
+                            <span class="tag">Sensor Integration</span>
+                            <span class="tag">Data Processing</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <span>Explore on GitHub</span>
+                                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">Development Journey</h2>
+                    <p class="section-subtitle">
+                        Practical engineering focus across mobile and backend solutions.
+                    </p>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Confirmed Journey Milestone -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge">Active Focus</div>
+                            <h3 class="timeline-title">Software Developer</h3>
+                            <h4 class="timeline-subtitle">Android &amp; Backend Engineering</h4>
+                            <p class="timeline-text">
+                                Developing practical native Android applications and building robust Django-powered backend APIs. Implementing hardware communication, sensor interfaces, and end-to-end data pipeline integrations.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag-sm">Android</span>
+                                <span class="tag-sm">Kotlin</span>
+                                <span class="tag-sm">Java</span>
+                                <span class="tag-sm">Python</span>
+                                <span class="tag-sm">Django</span>
+                                <span class="tag-sm">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Editable Experience Placeholder -->
+                    <!-- NOTE FOR OMKAR: You can easily update or add your employment, company names, and dates in the block below -->
+                    <div class="timeline-item placeholder-item">
+                        <div class="timeline-marker marker-hollow"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge badge-placeholder">Professional Records</div>
+                            <h3 class="timeline-title">Employment &amp; Roles</h3>
+                            <h4 class="timeline-subtitle">Industry Experience &amp; Engagements</h4>
+                            <p class="timeline-text">
+                                Additional verified workplace details, client engagements, and organizational roles can be updated directly here as career milestones expand.
+                            </p>
+                            <div class="placeholder-action">
+                                <span class="placeholder-tip">✏️ Ready for custom role &amp; company details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-header">
+                        <span class="section-tag">Connect</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                        <p class="contact-subtitle">
+                            Have a project idea or an interesting opportunity? I'd be happy to connect.
+                        </p>
+                    </div>
+
+                    <div class="contact-cards-grid">
+                        <!-- GitHub Card -->
+                        <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon icon-github">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-label">GitHub Profile</span>
+                                <span class="contact-value">github.com/Itsot</span>
+                            </div>
+                            <svg class="contact-arrow" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+
+                        <!-- Email Placeholder Card -->
+                        <!-- NOTE FOR OMKAR: Replace the placeholder email below with your preferred email address -->
+                        <div class="contact-card" id="emailContactCard">
+                            <div class="contact-card-icon icon-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-label">Email Placeholder</span>
+                                <a href="mailto:omkar.taru@example.com" class="contact-value email-link" id="emailAddress">omkar.taru@example.com</a>
+                            </div>
+                            <button type="button" class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email address">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Placeholder Card -->
+                        <!-- NOTE FOR OMKAR: Replace the placeholder LinkedIn URL below with your actual LinkedIn link -->
+                        <a href="https://linkedin.com/in/omkartaru" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon icon-linkedin">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-label">LinkedIn Placeholder</span>
+                                <span class="contact-value">linkedin.com/in/omkartaru</span>
+                            </div>
+                            <svg class="contact-arrow" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">Omkar<span class="highlight">Taru</span></span>
+                </a>
+                <p class="footer-role">Software Developer | Android &amp; Django</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a>
+                <span class="footer-sep">•</span>
+                <a href="#about" class="footer-link">About</a>
+                <span class="footer-sep">•</span>
+                <a href="#projects" class="footer-link">Projects</a>
+                <span class="footer-sep">•</span>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="currentYear">{{ current_year }}</span> Omkar Taru. All rights reserved.
+                </p>
+                <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <span>Back to top</span>
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                        <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
