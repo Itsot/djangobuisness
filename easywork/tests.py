@@ -2,7 +2,7 @@ from django.test import TestCase, Client
 from django.urls import reverse
 
 
-class PortfolioHomepageTests(TestCase):
+class ComingSoonHomepageTests(TestCase):
     def setUp(self):
         self.client = Client()
 
@@ -12,20 +12,18 @@ class PortfolioHomepageTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
 
-    def test_homepage_seo_and_content(self):
-        """Verify essential SEO tags and sections are rendered."""
+    def test_homepage_coming_soon_and_tech_elements(self):
+        """Verify essential Coming Soon title and high-tech developer elements."""
         response = self.client.get(reverse('home'))
         content = response.content.decode('utf-8')
 
-        # SEO meta & titles
-        self.assertIn("Omkar Taru | Software Developer Portfolio", content)
-        self.assertIn("Explore Omkar Taru's software development portfolio", content)
-
-        # Headings & Sections
-        self.assertIn("Hi, I'm <span class=\"gradient-text\">Omkar Taru.</span>", content)
-        self.assertIn("Software Developer <span class=\"headline-sep\">|</span>", content)
-        self.assertIn("Android & Django Developer", content)
-        self.assertIn("Let's Work Together", content)
+        # Coming Soon branding & tech titles
+        self.assertIn("COMING SOON", content)
+        self.assertIn("Omkar Taru", content)
+        self.assertIn("Android", content)
+        self.assertIn("Django", content)
+        self.assertIn("NEXT-GEN DEVELOPER PORTFOLIO", content)
+        self.assertIn("cyberCanvas", content)
         self.assertIn("https://github.com/Itsot", content)
 
     def test_database_independence(self):
